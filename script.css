@@ -1,0 +1,53 @@
+
+.overview{
+ background-color:whitesmoke;
+ min-height:100vh;
+ min-width:100vh;
+ padding-top:2%;
+ padding-bottom:2%;
+ 
+
+}
+
+#number_of_people,#number_of_buses{
+
+ border: 1px solid black;
+ font-size:15px;
+ width: 560px;
+ 
+}
+
+
+
+#button {
+ 
+ color: white;
+ 
+ background-color: #110efb;
+}
+
+
+
+.table {
+  font-size:20px ; 
+  border-bottom: 1px solid #19191b;
+ background-color:white;
+}
+
+.table-result{
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ border:1px solid #0505fe;
+ background-color:white;
+ box-shadow:5px 5px 5px blue;
+ margin: auto;
+  width: 20%;
+}
+
+#result {
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+
+}
