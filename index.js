@@ -6,7 +6,17 @@ function do_allocation(number_of_people, number_of_buses) {
     return array;
   }
 
-  let array = [1]; //default value 1
+  let array = []; 
+let n1 = 1, n2 = 1, nextTerm;
+for (let i = 0; i <number_of_buses; i++) {
+    console.log(n1);
+    array.push(n1)
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+    
+}
+console.log(array)
 
   number_of_people = number_of_people - 1;
   number_of_buses = number_of_buses - 1;
@@ -21,20 +31,6 @@ function do_allocation(number_of_people, number_of_buses) {
 
   number_of_people = number_of_people - b1;
   number_of_buses = number_of_buses - 1;
-
-
-  while (number_of_people >= 0) {
-
-    let sum = array[array.length - 2] + array[array.length - 1]; // Sum  in previous two buses
-    if (sum > number_of_people) {
-      array.push(number_of_people);
-    } else {
-      array.push(sum);
-    }
-    number_of_people = number_of_people - sum;
-    number_of_buses = number_of_buses - 1;
-  }
-
 
   if (array.length < noOfbuses) {
     let more = noOfbuses - array.length;
